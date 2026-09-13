@@ -1,0 +1,131 @@
+.nav-ticket {
+  background: var(--cobalt);
+  color: #fff;
+  border-bottom: 4px solid var(--citrus);
+}
+
+.nav-ticket__row {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  height: 84px;
+}
+
+.nav-ticket__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: auto;
+}
+
+.nav-ticket__mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--citrus);
+  border-radius: 10px;
+  color: var(--citrus);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.nav-ticket__name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 21px;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.nav-ticket__links {
+  display: flex;
+  gap: 24px;
+  font-size: 15px;
+  color: #dce4ff;
+}
+
+.nav-ticket__links a {
+  padding: 6px 2px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-ticket__links a:hover {
+  color: var(--citrus);
+}
+
+.nav-ticket__links a.is-active {
+  color: var(--citrus);
+  border-bottom-color: var(--citrus);
+}
+
+.nav-ticket__cart-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 3px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: var(--citrus);
+  color: var(--ink);
+  font: 11px var(--font-mono);
+}
+
+.nav-ticket__auth {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.nav-ticket__member {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: #dce4ff;
+}
+
+.nav-ticket__linkbtn {
+  color: #dce4ff;
+  font-size: 15px;
+}
+
+.nav-ticket__linkbtn:hover {
+  color: var(--citrus);
+}
+
+.nav-ticket .btn-primary {
+  background: var(--citrus);
+  color: var(--ink);
+  padding: 10px 22px;
+}
+
+.nav-ticket .btn-primary:hover {
+  background: #ffe38a;
+}
+
+.nav-ticket .btn-outline {
+  border-color: #dce4ff;
+  color: #dce4ff;
+  padding: 8px 18px;
+}
+
+.nav-ticket .btn-outline:hover {
+  background: #dce4ff;
+  color: var(--cobalt-deep);
+}
+
+@media (max-width: 780px) {
+  .nav-ticket__row {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 14px 0;
+    gap: 14px;
+  }
+  .nav-ticket__links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,26 @@
+.site-footer {
+  background: var(--ink);
+  color: #dce4ff;
+  margin-top: 0;
+  padding: 30px 0;
+  border-top: 4px solid var(--citrus);
+}
+
+.site-footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.site-footer__note {
+  margin: 0;
+}
+
+.site-footer__callnumber {
+  margin: 0;
+  font-family: var(--font-mono);
+  color: var(--citrus);
+}
