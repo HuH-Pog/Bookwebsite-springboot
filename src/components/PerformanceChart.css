@@ -1,0 +1,171 @@
+.performance-chart-card {
+  padding: 32px;
+  margin-top: 24px;
+}
+
+.chart-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.chart-legend-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.legend-dot.mse-dot {
+  background: var(--brand-accent);
+}
+
+.legend-dot.ese-dot {
+  background: var(--brand-primary);
+}
+
+.legend-line.pass-mark-dot {
+  width: 8px;
+  height: 8px;
+  background: #f59e0b;
+  border-radius: 50%;
+}
+
+.chart-bars-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 14px;
+}
+
+.chart-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bar-course-name {
+  font-weight: 600;
+  color: var(--text-highlight);
+  font-size: 0.95rem;
+}
+
+.bar-status-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.bar-status-tag.pass {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+.bar-status-tag.fail {
+  background: rgba(244, 63, 94, 0.15);
+  color: #fb7185;
+}
+
+.bar-score-group {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.bar-breakdown {
+  font-size: 0.74rem;
+  color: var(--text-dim);
+}
+
+.bar-total-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-highlight);
+}
+
+.bar-track-outer {
+  position: relative;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.benchmark-line {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #f59e0b;
+  z-index: 5;
+  box-shadow: 0 0 6px rgba(245, 158, 11, 0.6);
+}
+
+.benchmark-line::before {
+  content: '40';
+  position: absolute;
+  top: -12px;
+  left: -6px;
+  font-size: 0.55rem;
+  color: #f59e0b;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+.bar-stacked-track {
+  height: 100%;
+  display: flex;
+}
+
+.bar-seg {
+  height: 100%;
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.seg-mse {
+  background: var(--brand-accent);
+}
+
+.seg-ese.ese-pass {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+}
+
+.seg-ese.ese-fail {
+  background: linear-gradient(90deg, #f43f5e, #e11d48);
+}
