@@ -1,0 +1,36 @@
+target/
+*.class
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+.idea/
+*.iml
+.vscode/
+.DS_Store
+
+# ===== Backend (Maven/Java) =====
+backend/target/
+backend/*.class
+backend/.mvn/
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# ===== Frontend (Node/Vite) =====
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.local
+
+# ===== IDE/editor junk =====
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+
+# ===== Env/secrets =====
+.env
+.env.local
